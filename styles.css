@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #075e54;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#buscar {
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#agenda {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contacto {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.contacto:last-child {
+    border-bottom: none;
+}
+
+.contacto p {
+    margin: 5px 0;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+button.editar {
+    background-color: #34b7f1;
+    color: white;
+    margin-right: 5px;
+}
+
+button.eliminar {
+    background-color: #e0245e;
+    color: white;
+}
+
+#form-agregar {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#form-agregar label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form-agregar input {
+    width: calc(100% - 22px);
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#form-agregar button {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de cancelar */
+#form-agregar button.cancelar {
+    background-color: #f44336;
+    margin-left: 10px; /* Añade un pequeño margen a la izquierda */
+}
+
+.notification {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    z-index: 1000;
+    display: none;
+    width: 100%;
+}
+
+.show {
+    display: block;
+}
+
+/* Estilos para los botones del menú */
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1ab5a4;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.menu button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #075e54;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #0d823e;
+}
+
+.menu button:focus {
+    outline: none;
+}
